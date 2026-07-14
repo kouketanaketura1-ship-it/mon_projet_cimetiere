@@ -1,0 +1,147 @@
+TABLE: django_admin_log
+  - id: AutoField
+  - action_time: DateTimeField
+  - user_id: ForeignKey
+  - content_type_id: ForeignKey
+  - object_id: TextField
+  - object_repr: CharField
+  - action_flag: PositiveSmallIntegerField
+  - change_message: TextField
+
+TABLE: auth_permission
+  - id: AutoField
+  - name: CharField
+  - content_type_id: ForeignKey
+  - codename: CharField
+
+TABLE: auth_group
+  - id: AutoField
+  - name: CharField
+
+TABLE: auth_user
+  - id: AutoField
+  - password: CharField
+  - last_login: DateTimeField
+  - is_superuser: BooleanField
+  - username: CharField
+  - first_name: CharField
+  - last_name: CharField
+  - email: CharField
+  - is_staff: BooleanField
+  - is_active: BooleanField
+  - date_joined: DateTimeField
+
+TABLE: django_content_type
+  - id: AutoField
+  - app_label: CharField
+  - model: CharField
+
+TABLE: django_session
+  - session_key: CharField
+  - session_data: TextField
+  - expire_date: DateTimeField
+
+TABLE: cimetiere_caveau
+  - id: BigAutoField
+  - numero: CharField
+  - section: CharField
+  - bloc: CharField
+  - latitude: FloatField
+  - longitude: FloatField
+  - longueur: FloatField
+  - largeur: FloatField
+  - statut: CharField
+  - nom_defunt: CharField
+  - proprietaire_nom: CharField
+  - date_creation: DateTimeField
+
+TABLE: cimetiere_reservation
+  - id: BigAutoField
+  - caveau_id: ForeignKey
+  - client_nom: CharField
+  - client_prenom: CharField
+  - client_email: CharField
+  - client_telephone: CharField
+  - nom_defunt: CharField
+  - prenom_defunt: CharField
+  - date_naissance: DateField
+  - date_deces: DateField
+  - statut: CharField
+  - date_reservation: DateTimeField
+
+TABLE: cimetiere_utilisateur
+  - id: BigAutoField
+  - nom: CharField
+  - prenom: CharField
+  - email: CharField
+  - mot_de_passe: CharField
+  - role: CharField
+  - telephone: CharField
+  - date_inscription: DateTimeField
+  - mfa_active: BooleanField
+  - est_actif: BooleanField
+
+TABLE: cimetiere_mfacode
+  - id: BigAutoField
+  - utilisateur_id: ForeignKey
+  - code: CharField
+  - date_creation: DateTimeField
+  - date_expiration: DateTimeField
+  - est_utilise: BooleanField
+
+TABLE: cimetiere_concession
+  - id: BigAutoField
+  - caveau_id: ForeignKey
+  - proprietaire_nom: CharField
+  - proprietaire_telephone: CharField
+  - proprietaire_email: CharField
+  - type_concession: CharField
+  - date_debut: DateField
+  - date_fin: DateField
+  - date_renouvellement: DateField
+  - est_active: BooleanField
+  - document_scan: FileField
+
+TABLE: cimetiere_exhumation
+  - id: BigAutoField
+  - concession_id: ForeignKey
+  - defunt_nom: CharField
+  - defunt_prenom: CharField
+  - demandeur_nom: CharField
+  - demandeur_telephone: CharField
+  - date_deces: DateField
+  - date_demande: DateTimeField
+  - date_exhumation: DateField
+  - statut: CharField
+  - raison: TextField
+  - lieu_depot: CharField
+  - autorisation: FileField
+
+TABLE: cimetiere_transaction
+  - id: BigAutoField
+  - concession_id: ForeignKey
+  - montant: DecimalField
+  - type_paiement: CharField
+  - numero_telephone: CharField
+  - reference: CharField
+  - statut: CharField
+  - date_transaction: DateTimeField
+  - date_validation: DateTimeField
+  - commentaire: TextField
+
+TABLE: cimetiere_auditlog
+  - id: BigAutoField
+  - utilisateur_id: ForeignKey
+  - action: CharField
+  - details: TextField
+  - adresse_ip: GenericIPAddressField
+  - date_action: DateTimeField
+
+TABLE: cimetiere_configurationterrain
+  - id: BigAutoField
+  - superficie_totale: FloatField
+  - zones: CharField
+  - longueur_tombeau: FloatField
+  - largeur_tombeau: FloatField
+  - zones_non_exploitables: FloatField
+  - chemins_m2: FloatField

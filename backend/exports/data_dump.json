@@ -1,0 +1,1048 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add caveau",
+    "content_type": 8,
+    "codename": "add_caveau"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change caveau",
+    "content_type": 8,
+    "codename": "change_caveau"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete caveau",
+    "content_type": 8,
+    "codename": "delete_caveau"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view caveau",
+    "content_type": 8,
+    "codename": "view_caveau"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add reservation",
+    "content_type": 11,
+    "codename": "add_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change reservation",
+    "content_type": 11,
+    "codename": "change_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete reservation",
+    "content_type": 11,
+    "codename": "delete_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view reservation",
+    "content_type": 11,
+    "codename": "view_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add utilisateur",
+    "content_type": 13,
+    "codename": "add_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change utilisateur",
+    "content_type": 13,
+    "codename": "change_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete utilisateur",
+    "content_type": 13,
+    "codename": "delete_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view utilisateur",
+    "content_type": 13,
+    "codename": "view_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add concession",
+    "content_type": 9,
+    "codename": "add_concession"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change concession",
+    "content_type": 9,
+    "codename": "change_concession"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete concession",
+    "content_type": 9,
+    "codename": "delete_concession"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view concession",
+    "content_type": 9,
+    "codename": "view_concession"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add transaction",
+    "content_type": 12,
+    "codename": "add_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change transaction",
+    "content_type": 12,
+    "codename": "change_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete transaction",
+    "content_type": 12,
+    "codename": "delete_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view transaction",
+    "content_type": 12,
+    "codename": "view_transaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add exhumation",
+    "content_type": 10,
+    "codename": "add_exhumation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change exhumation",
+    "content_type": 10,
+    "codename": "change_exhumation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete exhumation",
+    "content_type": 10,
+    "codename": "delete_exhumation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view exhumation",
+    "content_type": 10,
+    "codename": "view_exhumation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add audit log",
+    "content_type": 7,
+    "codename": "add_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change audit log",
+    "content_type": 7,
+    "codename": "change_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete audit log",
+    "content_type": 7,
+    "codename": "delete_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view audit log",
+    "content_type": 7,
+    "codename": "view_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add configuration cimetiere",
+    "content_type": 14,
+    "codename": "add_configurationcimetiere"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change configuration cimetiere",
+    "content_type": 14,
+    "codename": "change_configurationcimetiere"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete configuration cimetiere",
+    "content_type": 14,
+    "codename": "delete_configurationcimetiere"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view configuration cimetiere",
+    "content_type": 14,
+    "codename": "view_configurationcimetiere"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add mfa code",
+    "content_type": 15,
+    "codename": "add_mfacode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change mfa code",
+    "content_type": 15,
+    "codename": "change_mfacode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete mfa code",
+    "content_type": 15,
+    "codename": "delete_mfacode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view mfa code",
+    "content_type": 15,
+    "codename": "view_mfacode"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add configuration terrain",
+    "content_type": 16,
+    "codename": "add_configurationterrain"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change configuration terrain",
+    "content_type": 16,
+    "codename": "change_configurationterrain"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete configuration terrain",
+    "content_type": 16,
+    "codename": "delete_configurationterrain"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view configuration terrain",
+    "content_type": 16,
+    "codename": "view_configurationterrain"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$2Nl8pDDOpWfYIysQOW3UUr$VCTN6ecy7LYMZB+vgO7Hrxj4VRkY1c7OhlXm9jUKJsc=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-10T16:32:54.693Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "auditlog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "caveau"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "concession"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "exhumation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "reservation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "transaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "utilisateur"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "configurationcimetiere"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "mfacode"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "cimetiere",
+    "model": "configurationterrain"
+  }
+},
+{
+  "model": "cimetiere.caveau",
+  "pk": 1,
+  "fields": {
+    "numero": "A-001",
+    "section": "Section A",
+    "bloc": "Bloc 1",
+    "latitude": -4.7692,
+    "longitude": 11.8664,
+    "longueur": 2.5,
+    "largeur": 1.0,
+    "statut": "DISPONIBLE",
+    "nom_defunt": null,
+    "proprietaire_nom": null,
+    "date_creation": "2026-06-24T22:50:29.754Z"
+  }
+},
+{
+  "model": "cimetiere.caveau",
+  "pk": 2,
+  "fields": {
+    "numero": "A-002",
+    "section": "Section A",
+    "bloc": "Bloc 1",
+    "latitude": -4.7693,
+    "longitude": 11.8665,
+    "longueur": 2.5,
+    "largeur": 1.0,
+    "statut": "RESERVE",
+    "nom_defunt": null,
+    "proprietaire_nom": null,
+    "date_creation": "2026-06-24T22:50:29.769Z"
+  }
+},
+{
+  "model": "cimetiere.caveau",
+  "pk": 3,
+  "fields": {
+    "numero": "B-001",
+    "section": "Section B",
+    "bloc": "Bloc 2",
+    "latitude": -4.7688,
+    "longitude": 11.867,
+    "longueur": 2.5,
+    "largeur": 1.0,
+    "statut": "OCCUPE",
+    "nom_defunt": null,
+    "proprietaire_nom": null,
+    "date_creation": "2026-06-24T22:50:29.787Z"
+  }
+},
+{
+  "model": "cimetiere.caveau",
+  "pk": 4,
+  "fields": {
+    "numero": "C-001",
+    "section": "Section C",
+    "bloc": "Bloc 3",
+    "latitude": -4.7685,
+    "longitude": 11.8673,
+    "longueur": 2.5,
+    "largeur": 1.0,
+    "statut": "NON_EXPLOITABLE",
+    "nom_defunt": null,
+    "proprietaire_nom": null,
+    "date_creation": "2026-06-24T22:50:29.803Z"
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 1,
+  "fields": {
+    "nom": "Admin",
+    "prenom": "Super",
+    "email": "admin@example.com",
+    "mot_de_passe": "pbkdf2_sha256$260000$demo$demo",
+    "role": "SUPER_ADMIN",
+    "telephone": null,
+    "date_inscription": "2026-06-24T22:50:29.829Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 2,
+  "fields": {
+    "nom": "Test",
+    "prenom": "User",
+    "email": "kouketanketura1@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$OavtiPmYRlpCnFk3R3Qjmr$yA+pIse8v9gk364B6GFcD87LWX0AB+r/9AvvcxYnDwE=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-06-26T17:14:04.723Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 3,
+  "fields": {
+    "nom": "Test",
+    "prenom": "User",
+    "email": "kouketanaketura1@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$GZbeqEIwccCxplZFc9Y3Sh$9tmDzWJbC0EtLRUKNz0GzxPs4zRqq330Z8dlNjt6GVg=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-06-27T18:26:43.392Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 4,
+  "fields": {
+    "nom": "kouketana",
+    "prenom": "ketura",
+    "email": "kouketanabernard4@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$qQ5dxSD0bGA71PdlwV9pkG$NCzz/3rjdkC2WBGYHktUDoOzCHyROveSVZjfoUvUDww=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-06-28T18:09:45.378Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 5,
+  "fields": {
+    "nom": "isra",
+    "prenom": "boy",
+    "email": "israbor334@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$wElkN7Smn2Qf0jbizTCvrJ$H7yIKv5oYuPrIkZPeiYBNGjmr7DM7XrYp5zb9yWH/cU=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-07-03T16:07:03.210Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 6,
+  "fields": {
+    "nom": "OBI",
+    "prenom": "Ruben",
+    "email": "obimonkaeliruben@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$Tb9rvZViFxp9r9cz48cF3l$+GJ8FAYg9wn6vMb2qL7zARnuGKqC9Qr1WNHU8F/fnxc=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-07-03T17:01:15.860Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 7,
+  "fields": {
+    "nom": "OBI",
+    "prenom": "ruben",
+    "email": "chancytchitembo@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$NHL7xx93R4qe8UkEDFMIzO$dsSiH49molXMnSk1yJDP1/HULn09VFJUTYEQ5QKr7GU=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-07-03T17:28:23.186Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 8,
+  "fields": {
+    "nom": "Test",
+    "prenom": "Test",
+    "email": "test@test.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$S3SwQNS1DkMGFp4Mw5CHj9$O5ksitA2jMQhCsF1wHLRfJoq15FP4UDitUazAGNjChA=",
+    "role": "CLIENT",
+    "telephone": null,
+    "date_inscription": "2026-07-10T16:31:28.755Z",
+    "mfa_active": true,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.utilisateur",
+  "pk": 9,
+  "fields": {
+    "nom": "admin",
+    "prenom": "",
+    "email": "admin@gmail.com",
+    "mot_de_passe": "pbkdf2_sha256$1200000$WuQYVAojzCR0E1XWlVCatG$G+0RMw+c4yEqvflPj60AdR78onLmWiQsEQ8Hn9WmA3U=",
+    "role": "ADMIN",
+    "telephone": "",
+    "date_inscription": "2026-07-10T16:32:57.957Z",
+    "mfa_active": false,
+    "est_actif": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 15,
+  "fields": {
+    "utilisateur": 3,
+    "code": "864850",
+    "date_creation": "2026-06-28T17:41:10.949Z",
+    "date_expiration": "2026-06-28T17:46:10.948Z",
+    "est_utilise": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 16,
+  "fields": {
+    "utilisateur": 3,
+    "code": "117703",
+    "date_creation": "2026-06-28T17:46:53.345Z",
+    "date_expiration": "2026-06-28T17:51:53.344Z",
+    "est_utilise": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 17,
+  "fields": {
+    "utilisateur": 3,
+    "code": "785869",
+    "date_creation": "2026-06-28T17:52:45.726Z",
+    "date_expiration": "2026-06-28T17:57:45.725Z",
+    "est_utilise": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 18,
+  "fields": {
+    "utilisateur": 4,
+    "code": "485218",
+    "date_creation": "2026-06-28T18:09:45.418Z",
+    "date_expiration": "2026-06-28T18:14:45.418Z",
+    "est_utilise": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 19,
+  "fields": {
+    "utilisateur": 4,
+    "code": "332683",
+    "date_creation": "2026-06-28T18:24:50.072Z",
+    "date_expiration": "2026-06-28T18:29:50.071Z",
+    "est_utilise": true
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 22,
+  "fields": {
+    "utilisateur": 2,
+    "code": "468986",
+    "date_creation": "2026-06-29T15:34:31.437Z",
+    "date_expiration": "2026-06-29T15:39:31.436Z",
+    "est_utilise": false
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 29,
+  "fields": {
+    "utilisateur": 3,
+    "code": "742366",
+    "date_creation": "2026-07-01T15:44:41.133Z",
+    "date_expiration": "2026-07-01T15:49:41.132Z",
+    "est_utilise": false
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 30,
+  "fields": {
+    "utilisateur": 5,
+    "code": "063505",
+    "date_creation": "2026-07-03T16:07:03.256Z",
+    "date_expiration": "2026-07-03T16:12:03.255Z",
+    "est_utilise": false
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 39,
+  "fields": {
+    "utilisateur": 6,
+    "code": "467394",
+    "date_creation": "2026-07-03T17:25:10.099Z",
+    "date_expiration": "2026-07-03T17:30:10.098Z",
+    "est_utilise": false
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 40,
+  "fields": {
+    "utilisateur": 7,
+    "code": "750380",
+    "date_creation": "2026-07-03T17:28:23.198Z",
+    "date_expiration": "2026-07-03T17:33:23.198Z",
+    "est_utilise": false
+  }
+},
+{
+  "model": "cimetiere.mfacode",
+  "pk": 41,
+  "fields": {
+    "utilisateur": 8,
+    "code": "607174",
+    "date_creation": "2026-07-10T16:31:28.772Z",
+    "date_expiration": "2026-07-10T16:36:28.772Z",
+    "est_utilise": false
+  }
+}
+]
