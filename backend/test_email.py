@@ -9,7 +9,6 @@ from email.mime.multipart import MIMEMultipart
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp-relay.brevo.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
 SMTP_USER = os.getenv("SMTP_USER", "b029ee001@smtp-brevo.com")
-SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "xsmtpsib-a5e707d91712af1c31eced8eb09849c84f05cd9cafea9aed02857902ac72d272-GjYOYwNV4CnyJzh5")
 
 # ⚠️ IMPORTANT: Cette adresse DOIT être authentifiée/validée dans Brevo
 FROM_EMAIL = os.getenv("FROM_EMAIL", "kouketanaketura1@gmail.com")
@@ -49,7 +48,7 @@ def envoyer_email(destinataire: str, sujet: str, message_plain: str, message_htm
             server.ehlo()
             server.starttls(context=context)
             server.ehlo()
-            server.login(SMTP_USER, SMTP_PASSWORD)
+            server.login(SMTP_USER)
             server.sendmail(FROM_EMAIL, destinataire, msg.as_string())
 
         print(f"✅ Email envoyé à {destinataire}")
