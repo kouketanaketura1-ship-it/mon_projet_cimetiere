@@ -10,7 +10,7 @@ CORRECTIONS :
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-
+import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # override=True : force la lecture du .env même si les variables sont déjà dans l'environnement
@@ -81,15 +81,13 @@ if USE_SQLITE:
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME':     os.getenv('DB_NAME',     'cimetiere_gi2'),
-            'USER':     os.getenv('DB_USER',     'postgres'),
-            'PASSWORD': os.getenv('DB_PASSWORD', 'ketura'),
-            'HOST':     os.getenv('DB_HOST',     'localhost'),
-            'PORT':     os.getenv('DB_PORT',     '5432'),
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
         }
-    }
+    
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
