@@ -25,7 +25,7 @@ DB_USER = os.getenv("DB_USER", "postgres")
 DB_PASSWORD = os.getenv("DB_PASSWORD", "")
 DB_HOST = os.getenv("DB_HOST", "localhost")
 if DB_HOST == "localhost":
-    DB_HOST = "127.0.0.1"  # évite la résolution IPv6 (::1) qui exige un mot de passe
+    DB_HOST = "monprojetcimetiere-production.up.railway.app"  # évite la résolution IPv6 (::1) qui exige un mot de passe
 DB_PORT = os.getenv("DB_PORT", "5432")
 
 print(f"🔌 Connexion à PostgreSQL : base='{DB_NAME}' hôte='{DB_HOST}:{DB_PORT}' user='{DB_USER}'")

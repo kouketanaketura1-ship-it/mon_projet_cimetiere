@@ -1,7 +1,7 @@
 # utils/api.py
 import requests
 
-API_URL = "http://127.0.0.1:8000/api"
+API_URL = "http://monprojetcimetiere-production.up.railway.app:8000/api"
 
 
 def _get(path, params=None, timeout=10):
