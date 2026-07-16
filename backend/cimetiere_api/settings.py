@@ -45,7 +45,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8550",
-    "http://monprojetcimetiere-production.up.railway.app:8550",
+    "http://monprojetcimetiere-production.up.railway.app:8080",
 ]
 CORS_ALLOW_ALL_ORIGINS = True  # en dev
 
