@@ -86,4 +86,8 @@ def main(page: ft.Page):
     else:
         go_to_login(page)
 
-ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=8560)
+if __name__ == "__main__":
+    import os
+    # Si Railway fournit un port, on l'utilise. Sinon, on prend 8560 localement.
+    port = int(os.getenv("PORT", 8560))
+    ft.app(target=main, port=port, host="0.0.0.0")
