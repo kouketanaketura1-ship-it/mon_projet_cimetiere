@@ -90,4 +90,4 @@ if __name__ == "__main__":
     import os
     # Si Railway fournit un port, on l'utilise. Sinon, on prend 8560 localement.
     port = int(os.getenv("PORT", 8560))
-    ft.app(target=main, port=port, host="0.0.0.0";assets_dir="frontend/utils")
+    ft.app(target=main, port=port, host="0.0.0.0",assets_dir="frontend/utils")
