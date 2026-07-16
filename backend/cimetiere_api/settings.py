@@ -77,8 +77,6 @@ WSGI_APPLICATION = 'cimetiere_api.wsgi.application'
 # Nom de la base : cimetiere_gi2
 # Créer avec : psql -U postgres -c "CREATE DATABASE cimetiere_gi2;"
 import os
-import dj_database_url
-
 DATABASES = {
     'default': dj_database_url.config(
         # Railway fournit automatiquement la variable DATABASE_URL.
