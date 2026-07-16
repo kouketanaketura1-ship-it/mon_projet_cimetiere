@@ -32,7 +32,6 @@ def main(page: ft.Page):
     page.padding = 0
     page.bgcolor = "#f5f7fb"
     page.scroll = ft.ScrollMode.AUTO
-    page.favicon="icone.png"
     def go_to_login(page):
         build_login_page(page, go_to_register, go_to_mfa, go_to_dashboard)
 
