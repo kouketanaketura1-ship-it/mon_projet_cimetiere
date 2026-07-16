@@ -32,7 +32,7 @@ def main(page: ft.Page):
     page.padding = 0
     page.bgcolor = "#f5f7fb"
     page.scroll = ft.ScrollMode.AUTO
-
+    page.favicon="icone.png"
     def go_to_login(page):
         build_login_page(page, go_to_register, go_to_mfa, go_to_dashboard)
 
@@ -90,4 +90,4 @@ if __name__ == "__main__":
     import os
     # Si Railway fournit un port, on l'utilise. Sinon, on prend 8560 localement.
     port = int(os.getenv("PORT", 8560))
-    ft.app(target=main, port=port, host="0.0.0.0")
+    ft.app(target=main, port=port, host="0.0.0.0";assets_dir="frontend/utils", view=ft.WEB_BROWSER)
