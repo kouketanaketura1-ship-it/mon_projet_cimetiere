@@ -18,12 +18,7 @@ load_dotenv(BASE_DIR / '.env', override=True)
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-change-moi')
 DEBUG = os.getenv('DEBUG', 'True').lower() in ('1', 'true', 'yes')
-allowed_hosts = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
-ALLOWED_HOSTS = [
-    'monprojetcimetiere-production.up.railway.app',
-    '127.0.0.1',
-    'localhost'
-]
+ALLOWED_HOSTS = ['*']
 USE_SQLITE = os.getenv('USE_SQLITE', 'True').lower() in ('1', 'true', 'yes')
 
 INSTALLED_APPS = [
