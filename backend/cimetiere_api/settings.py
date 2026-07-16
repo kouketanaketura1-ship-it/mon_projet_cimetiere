@@ -72,22 +72,16 @@ WSGI_APPLICATION = 'cimetiere_api.wsgi.application'
 # ─── Base de données PostgreSQL ───────────────────────────────────────────────
 # Nom de la base : cimetiere_gi2
 # Créer avec : psql -U postgres -c "CREATE DATABASE cimetiere_gi2;"
-if USE_SQLITE:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-    DATABASES = {
+import os
+import dj_database_url
+
+DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
-        conn_max_age=600,
-        conn_health_checks=True,
+        # Railway fournit automatiquement la variable DATABASE_URL.
+        # Django va la lire pour se connecter directement à votre base en ligne !
+        default=os.getenv('DATABASE_URL', 'postgresql://postgres:votre_mot_de_passe_local@localhost:5432/votre_db_locale')
     )
-        }
-    
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
