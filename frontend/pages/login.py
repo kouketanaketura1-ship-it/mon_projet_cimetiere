@@ -7,7 +7,7 @@
 import flet as ft
 import requests
 
-API_URL = "http://monprojetcimetiere-production.up.railway.app:8000/api"
+API_URL = "https://monprojetcimetiere-production.up.railway.app/api"
 
 
 def build_login_page(page, go_to_register_func, go_to_mfa_func, go_to_dashboard_func=None):
