@@ -1,9 +1,1 @@
-import flet as ft
-
-def main(page: ft.Page):
-    # Votre code Flet ici
-    page.add(ft.Text("Bienvenue sur le frontend du cimetière !"))
-
-# Très important pour Railway :
-if __name__ == "__main__":
-    ft.app(target=main)
+web: flet run --web --port $PORT main.py
