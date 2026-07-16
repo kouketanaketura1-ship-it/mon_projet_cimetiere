@@ -17,6 +17,7 @@ def create_admin_view(page, naviguer):
         page.snack_bar = ft.SnackBar(
             content=ft.Text(message),
             bgcolor=ft.Colors.GREEN_600 if succes else ft.Colors.RED_600,
+            icons=ft.icons.INFO_OUTLINED,
         )
         page.snack_bar.open = True
         page.update()

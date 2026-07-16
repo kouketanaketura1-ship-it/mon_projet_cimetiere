@@ -7,7 +7,7 @@ import flet as ft
 import requests
 from pages.layout import build_layout
 
-API_URL = "http://monprojetcimetiere-production.up.railway.app:8000/api"
+API_URL = "https://monprojectemietiere-production.up.railway.app/api"
 
 
 def create_dashboard_view(page, naviguer, role=None):
