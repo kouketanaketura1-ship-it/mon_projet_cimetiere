@@ -96,10 +96,16 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ─── Email configuration ──────────────────────────────────────────────────────
+# Pour Gmail, il faut utiliser un mot de passe d'application (App Password),
+# pas le mot de passe du compte Gmail habituel.
 # Le code MFA est envoyé VERS l'email du client (pas vers l'admin).
-# En développement (`DEBUG=True`) on utilise le backend console pour éviter
-# d'envoyer de vrais emails (préserve les mots de passe et codes).
-if DEBUG:
+SMTP_USER = os.getenv('EMAIL_HOST_USER', '').strip()
+SMTP_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '').strip()
+USE_SMTP = os.getenv('USE_SMTP', 'True').lower() in ('1', 'true', 'yes')
+
+if USE_SMTP and SMTP_USER and SMTP_PASSWORD:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+elif DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -107,8 +113,8 @@ else:
 EMAIL_HOST        = os.getenv('EMAIL_HOST',        'smtp.gmail.com')
 EMAIL_PORT        = int(os.getenv('EMAIL_PORT',    587))
 EMAIL_USE_TLS     = os.getenv('EMAIL_USE_TLS', 'True').lower() in ('1', 'true', 'yes')
-EMAIL_HOST_USER   = os.getenv('EMAIL_HOST_USER',   '')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')
+EMAIL_HOST_USER   = SMTP_USER
+EMAIL_HOST_PASSWORD = SMTP_PASSWORD
 DEFAULT_FROM_EMAIL  = os.getenv(
     'DEFAULT_FROM_EMAIL',
     f"Gestion Cimetière <{EMAIL_HOST_USER}>"
