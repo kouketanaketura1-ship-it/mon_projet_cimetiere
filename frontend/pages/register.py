@@ -61,6 +61,10 @@ def build_register_page(page, go_to_login, go_to_mfa):
             go_to_mfa(page, email_field.value)  # ✅ Correction : page ajouté
             return
         
+        # 👇 AJOUTEZ CES DEUX LIGNES DE DEBUG ICI 👇
+        print(f"--- DEBUG INSCRIPTION --- STATUS: {status}")
+        print(f"--- REPONSE SERVEUR --- DATA: {data}")
+        
         message.value = f"❌ {data.get('error', 'Erreur')}"
         message.color = ft.Colors.RED_400
         page.update()
