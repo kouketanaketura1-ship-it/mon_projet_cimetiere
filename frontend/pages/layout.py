@@ -51,15 +51,21 @@ def build_sidebar(page, active_view, naviguer):
         page.controls.clear()
         build_login_page(page, None, None, None)
 
-    # Affiche un logo image si présent dans frontend/assets/logo.png sinon emoji
+    # Affiche le logo du projet si présent, sinon un texte
     import os
-    logo_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'logo.png')
+    logo_candidates = [
+        os.path.join(os.path.dirname(__file__), '..', 'pages', 'logo.jpg'),
+        os.path.join(os.path.dirname(__file__), '..', 'utils', 'icone.jpg'),
+        os.path.join(os.path.dirname(__file__), '..', 'assets', 'logo.png'),
+    ]
     logo_widget = ft.Text("🏛️ Cimetière", size=20, weight=ft.FontWeight.BOLD, color=ft.Colors.WHITE)
-    try:
-        if os.path.exists(logo_path):
-            logo_widget = ft.Image(src=logo_path, width=48, height=48)
-    except Exception:
-        pass
+    for logo_path in logo_candidates:
+        try:
+            if os.path.exists(logo_path):
+                logo_widget = ft.Image(src=logo_path, width=48, height=48)
+                break
+        except Exception:
+            continue
 
     return ft.Container(
         width=240,
