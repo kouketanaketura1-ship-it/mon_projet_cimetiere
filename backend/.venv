@@ -1,0 +1,4 @@
+DATABASE_URL=postgresql://postgres:xTCzzuwtxYPdcqxIucwyehQIFeLibGJJ@tokaido.proxy.rlwy.net:39651/railway
+SECRET_KEY=django-insecure-change-moi-123456
+DEBUG=True
+USE_SQLITE=False
